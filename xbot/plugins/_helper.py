@@ -7,9 +7,9 @@ from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 from . import *
 
 msg = f"""
-**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**
+**⚡ ℓєgєη∂αяу αƒ χвσт⚡**
 
-  •        [📑 Repo 📑](https://github.com/The-HellBot/HellBot)
+  •        [📑 Repo 📑](https://github.com/LiveToLife/X-Userbot)
   •        [🚀 Deploy 🚀](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FThe-HellBot%2FHellBot&template=https%3A%2F%2Fgithub.com%2Fthe-hellbot%2Fhellbot)
 
   •  ©️ {x_channel} ™
