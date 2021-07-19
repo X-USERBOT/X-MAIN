@@ -46,7 +46,7 @@ botname = Config.BOT_USERNAME
 async def x_a(event):
     try:
        x = await bot.inline_query(botname, "alive")
-        await hell[0].click(event.chat_id)
+        await x[0].click(event.chat_id)
         if event.sender_id == ForGo10God:
             await event.delete()
     except (noin, dedbot):
