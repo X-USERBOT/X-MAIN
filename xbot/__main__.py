@@ -10,7 +10,7 @@ from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRe
 from xbot import LOGS, bot, tbot
 from xbot.config import Config
 from xbot.utils import load_module
-from xbot.version import X-Ver as xver
+from xbot.version import __xbot__ as xver
 hl = Config.HANDLER
 X_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/cc64741c316f3d720b998.jpg"
 
