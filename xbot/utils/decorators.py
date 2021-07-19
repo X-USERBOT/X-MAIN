@@ -120,7 +120,7 @@ def sudo_cmd(pattern=None, command=None, **args):
                 cmd = reg + command
             else:
                 cmd = (
-                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                    (xreg + pattern).replace("$", "").replace("\\", "").replace("^", "")
                 )
             try:
                 SUDO_LIST[file_test].append(cmd)
