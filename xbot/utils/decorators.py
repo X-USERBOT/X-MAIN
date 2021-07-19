@@ -47,7 +47,7 @@ def x_cmd(pattern=None, command=None, **args):
             elif len(Config.HANDLER) == 1:
                 xreg = "^\\" + Config.HANDLER
                 reg = Config.HANDLER
-            args["pattern"] = re.compile(xlreg + pattern)
+            args["pattern"] = re.compile(xreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
