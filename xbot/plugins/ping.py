@@ -3,7 +3,7 @@ import datetime
 
 from . import *
 
-@bot.on(xl_cmd(pattern="ping$"))
+@bot.on(x_cmd(pattern="ping$"))
 @bot.on(sudo_cmd(pattern="ping$", allow_sudo=True))
 async def pong(hell):
     if hell.fwd_from:
