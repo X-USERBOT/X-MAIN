@@ -4,7 +4,7 @@ from xbot.config import Config
 from xbot.helpers import *
 from xbot.utils import *
 from xbot.random_strings import *
-from xbot.version import __x__
+from xbot.version import __xbot__
 from telethon import version
 
 
