@@ -16,7 +16,7 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from  import *
+from . import *
 from xbot.helpers import *
 from xbot.config import *
 from xbot.utils import *
