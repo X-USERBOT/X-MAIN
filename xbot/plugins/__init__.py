@@ -17,7 +17,7 @@ restlo = "./xbot/resources/pics/rest.jpeg"
 shuru = "./xbot/resources/pics/shuru.jpg"
 hl = Config.HANDLER
 shl = Config.SUDO_HANDLER
-hell_ver = __xbot__
+x_ver = __xbot__
 tel_ver = version.__version__
 
 async def get_user_id(ids):
@@ -41,8 +41,8 @@ else:
 
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
-my_channel = Config.MY_CHANNEL or "Its_HellBot"
-my_group = Config.MY_GROUP or "HellBot_Chat"
+my_channel = Config.MY_CHANNEL or "X_User_Bot"
+my_group = Config.MY_GROUP or "X_Discussion"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
@@ -51,7 +51,7 @@ if "@" in my_group:
 chnl_link = "https://t.me/X_User_Bot"
 x_channel = f"[χ-υѕєявσт]({chnl_link})"
 grp_link = "https://t.me/x_discussion"
-hell_grp = f"[χ-υѕєявσт Group]({grp_link})"
+x_grp = f"[χ-υѕєявσт Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
