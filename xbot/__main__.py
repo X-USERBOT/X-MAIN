@@ -21,7 +21,7 @@ async def x_bot(bot_token):
         bot.me = await bot.get_me()
         bot.uid = telethon.utils.get_peer_id(bot.me)
     except Exception as e:
-        LOGS.error(f"X-BOT_SESSION - {str(e)}")
+        LOGS.error(f"X_SESSION - {str(e)}")
         sys.exit()
 
 
