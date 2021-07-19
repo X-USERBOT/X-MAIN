@@ -38,7 +38,7 @@ else:
             ).start(bot_token=Config.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
             LOGS.info("🔰 Starting χ-υѕєявσт 🔰")
-            bot.loop.run_until_complete(x_bott(Config.BOT_USERNAME))
+            bot.loop.run_until_complete(x_bot(Config.BOT_USERNAME))
             LOGS.info("🔥 χ-υѕєявσт Startup Completed 🔥")
         else:
             bot.start()
