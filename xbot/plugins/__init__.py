@@ -17,7 +17,7 @@ restlo = "./xbot/resources/pics/rest.jpeg"
 shuru = "./xbot/resources/pics/shuru.jpg"
 hl = Config.HANDLER
 shl = Config.SUDO_HANDLER
-hell_ver = __x__
+hell_ver = __xbot__
 tel_ver = version.__version__
 
 async def get_user_id(ids):
