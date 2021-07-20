@@ -9,7 +9,7 @@ from . import *
 
 #-------------------------------------------------------------------------------
 
-hell_pic = Config.ALIVE_PIC or "https://telegra.ph/file/cc64741c316f3d720b998.jpg"
+x_pic = Config.ALIVE_PIC or "https://telegra.ph/file/cc64741c316f3d720b998.jpg"
 alive_c = f"__**🔥🔥 χ-υѕєявσт 🔥🔥**__\n\n"
 alive_c += f"__↼ Øwñêr ⇀__ : 『 {x_mention} 』\n\n"
 alive_c += f"•♦• Telethon     :  {tel_ver} \n"
@@ -26,7 +26,7 @@ async def up(x):
         return
     await x.get_chat()
     await x.delete()
-    await bot.send_file(x.chat_id, hell_pic, caption=alive_c)
+    await bot.send_file(x.chat_id, x_pic, caption=alive_c)
     await x.delete()
 
 msg = f"""
