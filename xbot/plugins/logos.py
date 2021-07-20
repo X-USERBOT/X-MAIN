@@ -14,7 +14,7 @@ PICS_STR = []
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(xevent):
     event = await eor(xevent, "Processing.....")
-    fnt = await get_font_file(xevent.client, "@x_fonts")
+    fnt = await get_font_file(xevent.client, "@x_font")
     if xevent.reply_to_msg_id:
         rply = await xevent.get_reply_message()
         logo_ = await rply.download_media()
