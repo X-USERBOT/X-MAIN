@@ -164,7 +164,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 )
 
         elif event.query.user_id == bot.uid and query == "pm_warn":
-            hel_l = X_FIRST.format(hell_mention, mssge)
+            hel_l = X_FIRST.format(x_mention, mssge)
             result = builder.photo(
                 file=x_pic,
                 text=hel_l,
