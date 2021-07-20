@@ -430,7 +430,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™",
+                "тнιѕ ιѕ му мαѕтєя υѕєявσт уσυ ¢αηт υѕє ιт мαкє уσυя σωη ƒяσм @X_User_Bot . © χ-υѕєявσт ™",
                 cache_time=0,
                 alert=True,
             )
