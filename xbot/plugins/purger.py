@@ -6,7 +6,7 @@ from . import *
 lg_id = Config.LOGGER_ID
 
 
-@bot.on(x__cmd(pattern="del$"))
+@bot.on(x_cmd(pattern="del$"))
 @bot.on(sudo_cmd(pattern="del$", allow_sudo=True))
 @errors_handler
 async def delete_it(safai):
@@ -19,7 +19,7 @@ async def delete_it(safai):
         	pass
 
 
-@bot.on(x__cmd(pattern=r"purge", outgoing=True))
+@bot.on(x_cmd(pattern=r"purge", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"purge", allow_sudo=True))
 @errors_handler
 async def fastpurger(purg):
@@ -50,7 +50,7 @@ async def fastpurger(purg):
     await done.delete()
 
 
-@bot.on(x__cmd(pattern=r"purgeme", outgoing=True))
+@bot.on(x_cmd(pattern=r"purgeme", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"purgeme", allow_sudo=True))
 @errors_handler
 async def purgeme(delme):
@@ -76,7 +76,7 @@ async def purgeme(delme):
     await smsg.delete()
 
 
-@bot.on(x__cmd(pattern=r"sd", outgoing=True))
+@bot.on(x_cmd(pattern=r"sd", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"sd", allow_sudo=True))
 @errors_handler
 async def selfdestruct(destroy):
