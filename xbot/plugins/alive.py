@@ -22,7 +22,7 @@ alive_c += f"•♦• Channel      :  {x_channel}\n"
 @bot.on(x_cmd(outgoing=True, pattern="alive$"))
 @bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
 async def up(hell):
-    if hell.fwd_from:
+    if x.fwd_from:
         return
     await x.get_chat()
     await x.delete()
