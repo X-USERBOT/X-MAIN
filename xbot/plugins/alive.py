@@ -43,10 +43,10 @@ botname = Config.BOT_USERNAME
 
 @bot.on(x_cmd(pattern="xbot$"))
 @bot.on(sudo_cmd(pattern="xbot$", allow_sudo=True))
-async def x_a(event):
+async def x(event):
     try:
        x = await bot.inline_query(botname, "alive")
-       await xbot[0].click(event.chat_id)
+       await x[0].click(event.chat_id)
        if event.sender_id == P_4_PEEYUSH:
             await event.delete()
     except (noin, dedbot):
