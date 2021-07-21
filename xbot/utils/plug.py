@@ -43,7 +43,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("xBot - Successfully imported " + shortname)
+        LOGS.info("χ-υѕєявσт Successfully imported " + shortname)
     else:
         import xbot.utils
 
