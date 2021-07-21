@@ -37,24 +37,24 @@ async def restart(event):
 
 @bot.on(x_cmd(pattern="restart$"))
 @bot.on(sudo_cmd(pattern="restart$", allow_sudo=True))
-async def re(xbot):
-    if xbot.fwd_from:
+async def re(x):
+    if x.fwd_from:
         return
-    event = await eor(xbot, "Restarting Dynos ...")
+    event = await eor(x, "Restarting Dynos ...")
     if HEROKU_API_KEY:
         await restart(event)
     else:
-        await event.edit("Please Set Your `HEROKU_API_KEY` to restart χ+υѕєявσт")
+        await event.edit("Please Set Your `HEROKU_API_KEY` to restart Hêllẞø†")
 
 
 @bot.on(x_cmd(pattern="shutdown$"))
 @bot.on(sudo_cmd(pattern="shutdown$", allow_sudo=True))
-async def down(xbot):
-    if xbot.fwd_from:
+async def down(x):
+    if x.fwd_from:
         return
-    event = await eor(xbot, "`Turing Off Heroku Dynos...`")
+    event = await eor(x, "`Turing Off Heroku Dynos...`")
     await asyncio.sleep(2)
-    await event.edit("**[ ⚠️ ]** \n**Hêllẞø† Dynos is now turned off. Manually turn it on to start again.**")
+    await event.edit("**[ ⚠️ ]** \n**χ-υѕєявσт Dynos is now turned off. Manually turn it on to start again.**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -63,22 +63,22 @@ async def down(xbot):
 
 @bot.on(x_cmd(pattern="(set|get|del) var(?: |$)(.*)(?: |$)([\s\S]*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="(set|get|del) var(?: |$)(.*)(?: |$)([\s\S]*)", allow_sudo=True))
-async def variable(xbot):
-    if xbot.fwd_from:
+async def variable(x):
+    if x.fwd_from:
         return
     if Config.HEROKU_APP_NAME is not None:
         app = Heroku.app(Config.HEROKU_APP_NAME)
     else:
-        return await eor(xbot, "`[HEROKU]:" "\nPlease setup your` **HEROKU_APP_NAME**")
-    exe = xbot.pattern_match.group(1)
+        return await eor(x, "`[HEROKU]:" "\nPlease setup your` **HEROKU_APP_NAME**")
+    exe = x.pattern_match.group(1)
     heroku_var = app.config()
     if exe == "get":
-        event = await eor(xbot, "Getting Variable Info...")
+        event = await eor(x, "Getting Variable Info...")
         await asyncio.sleep(1.5)
         cap = "Logger me chala jaa bsdk."
         capn = "Saved in LOGGER_ID !!"
         try:
-            variable = xboy.pattern_match.group(2).split()[0]
+            variable = x.pattern_match.group(2).split()[0]
             if variable in ("X_SESSION", "BOT_TOKEN", "HEROKU_API_KEY"):
                 if Config.ABUSE == "ON":
                     await bot.send_file(x.chat_id, cjb, caption=cap)
