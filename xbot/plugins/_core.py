@@ -65,7 +65,7 @@ async def send(event):
         )
         await event.delete()
     else:
-        await eod(event, "File not found..... Kek")
+        await eod(event, "File not found..... Lil")
 
 
 @bot.on(x_cmd(pattern="install$", outgoing=True))
@@ -100,7 +100,7 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await eor(event, a)
-                    return await eor(event, f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {x_mention}\n\n{string}\n\n        ⚡ **[ℓє]({chnl_link})** ⚡", link_preview=False)
+                    return await eor(event, f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {x_mention}\n\n{string}\n\n        ⚡ **[χ-υѕєявσт]({chnl_link})** ⚡", link_preview=False)
                 return await eor(event, f"Installed module `{os.path.basename(downloaded_file_name)}`")
             else:
                 os.remove(downloaded_file_name)
