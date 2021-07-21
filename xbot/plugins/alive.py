@@ -4,7 +4,7 @@ from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
 from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
-
+import time
 from . import *
 
 #-------------------------------------------------------------------------------
