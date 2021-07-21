@@ -32,11 +32,11 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if "#" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        hellbot = await event.client.send_message(
+        xbot = await event.client.send_message(
             event.chat_id,
             "__**Back to Virtual World!**__\nNo Longer AFK.\n⏱️ Was afk for: `"
             + total_afk_time
-            + "`", file=hellpic
+            + "`", file=xpic
         )
         try:
             await event.client.send_message(  # pylint:disable=E0602
@@ -50,13 +50,13 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `LOGGER_ID` "
                 + "for the proper functioning of afk."
-                + f"Ask in {hell_grp} to get help!",
+                + f"Ask in {x_grp} to get help!",
                 reply_to=event.message.id,
                 link_preview=False,
                 silent=True,
             )
         await asyncio.sleep(5)
-        await hellbot.delete()
+        await xbot.delete()
         USER_AFK = {}  # pylint:disable=E0602
         afk_time = None  # pylint:disable=E0602
 
@@ -94,7 +94,7 @@ async def on_afk(event):
             message_to_reply = (
                 f"**I'm currently AFK!** \n\n**⏰ AFK Since :**  `{total_afk_time}`\n"
                 )
-        msg = await event.reply(message_to_reply, file=hellpic)
+        msg = await event.reply(message_to_reply, file=xpic)
         await asyncio.sleep(2)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
             await last_afk_message[event.chat_id].delete()  # pylint:disable=E0602
@@ -120,7 +120,7 @@ async def _(event):
     start_1 = datetime.datetime.now()
     afk_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
-    hellpic = await event.client.download_media(krakenop)
+    xpic = await event.client.download_media(krakenop)
     if not USER_AFK:  # pylint:disable=E0602
         last_seen_status = await bot(  # pylint:disable=E0602
             functions.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())
@@ -130,23 +130,23 @@ async def _(event):
         USER_AFK = f"yes: {reason} {xpic}"  # pylint:disable=E0602
         if reason:
             await bot.send_message(
-                event.chat_id, f"**I'm going afk🚶** \n\n**Because :** {reason}", file=hellpic
+                event.chat_id, f"**I'm going afk🚶** \n\n**Because :** {reason}", file=xpic
             )
         else:
             await bot.send_message(
-                event.chat_id, f"**I am Going afk!**🚶", file=hellpic)
+                event.chat_id, f"**I am Going afk!**🚶", file=xpic)
         await asyncio.sleep(0.001)
         await event.delete()
         try:
             if reason:
                 await bot.send_message(
                   Config.LOGGER_ID,
-                  f"#AFKTRUE \nAFK mode = **True**\nReason  `{reason}`",file=hellpic
+                  f"#AFKTRUE \nAFK mode = **True**\nReason  `{reason}`",file=xpic
                  )
             else:
                 await bot.send_message(
                   Config.LOGGER_ID,
-                  f"#AFKTRUE \nAFK mode = **True**",file=hellpic
+                  f"#AFKTRUE \nAFK mode = **True**",file=xpic
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             logger.warn(str(e))  # pylint:disable=E06
@@ -185,7 +185,7 @@ async def set_not_night(event):
                 event.chat_id,
                 "Please set `LOGGER_ID` "
                 + "for the proper functioning of night functionality "
-                + "report in {}\n\n `{}`".format(hell_grp, str(e)),
+                + "report in {}\n\n `{}`".format(x_grp, str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
