@@ -287,3 +287,15 @@ async def _(event):
         queue = que.get(e)
         queue.pop(0)
         await event.edit(f"Teri Maki Chut Maderchod {username}")
+
+
+CmdHelp("replyraid").add_command(
+  "replyraid", "When Activating On Any User It will Send Bad Word In Reply "
+("stopraid").add_command(
+  "stopraid", "Reply Raid Deactivate Command"
+).add_info(
+  "Reply Raid"
+).add_warning(
+  "✅ Harmless Module."
+).add()
+
