@@ -42,7 +42,7 @@ USER_BOT_WARN_ZERO = "Enough Of Your Flooding In My Master's PM!! \n\n**🚫 Blo
 
 X_FIRST = (
     "**🔥 χ-υѕєявσт Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
-    "{} is currently unavailable.\nThis is an automated message.\n\n"
+    "{} is currently unavailable.\nThis is an automated message By X-Userbot.\n\n"
     "{}\n\n**Please Choose Why You Are Here!!**".format(x_mention, mssge))
 
 alive_txt = """
@@ -203,7 +203,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text="""**Hey! This is [χ-υѕєявσт](https://t.me/X_User_Bot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/X-User_Bot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/X_User_Bot"),
                         custom.Button.url(
                             "⚡ GROUP ⚡", "https://t.me/X_Discussion"
                         ),
@@ -213,7 +213,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                             "✨ REPO ✨", "https://github.com/LiveToLife/X-Userbot"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"
+                            "🔰 TUTORIAL 🔰", "Not Available"
                     )
                     ],
                 ],
