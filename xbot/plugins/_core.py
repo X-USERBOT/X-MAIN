@@ -175,4 +175,4 @@ CmdHelp("core").add_command(
   "❌ Install External Plugin On Your Own Risk. We won't help if anything goes wrong after installing a plugin."
 ).add()
 
-# hellbot
+
