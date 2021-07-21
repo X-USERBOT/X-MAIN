@@ -92,7 +92,7 @@ async def x_is_on():
     except Exception as e:
         LOGS.info(str(e))
 
-# Join HellBot Channel after deploying 🤐😅
+# Join XBot Channel after deploying 🤐😅
     try:
         await bot(JoinChannelRequest("@X_User_Bot"))
     except BaseException:
@@ -113,4 +113,4 @@ else:
     bot.tgbot = None
     bot.run_until_disconnected()
 
-# hellbot
+# xbot
