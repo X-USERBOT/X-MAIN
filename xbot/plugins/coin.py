@@ -2,7 +2,7 @@ import random
 
 from xbot import CMD_HELP
 
-from xbot.utils import admin_cmd
+from xbot.utils import x_cmd
 
 from . import *
 
