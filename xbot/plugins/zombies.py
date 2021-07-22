@@ -6,7 +6,6 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-from xbot.Config import Var
 from xbot.utils import x_cmd
 
 from . import *
