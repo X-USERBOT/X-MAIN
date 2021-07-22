@@ -6,7 +6,7 @@
 import json
 import urllib.request
 
-from xbot.utils import admin_cmd
+from xbot.utils import x_cmd
 
 from xbot import CMD_HELP
 
