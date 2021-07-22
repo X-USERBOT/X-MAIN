@@ -1,7 +1,7 @@
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from xbot.util import x_cmd
+from xbot.utils import x_cmd
 
 
 @bot.on(x_cmd("fgali"))
