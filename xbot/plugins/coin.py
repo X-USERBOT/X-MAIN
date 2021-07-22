@@ -1,6 +1,6 @@
 import random
 
-from xbot import ALIVE_NAME, CMD_HELP
+from xbot import CMD_HELP
 
 from xbot.utils import admin_cmd
 
