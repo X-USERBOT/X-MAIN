@@ -3,6 +3,7 @@ from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from xbot.utils import x_cmd
 
+from . import *
 
 @bot.on(x_cmd("fgali"))
 async def _(event):
