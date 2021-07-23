@@ -276,7 +276,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🥴 **Nikal lawde\nPehli fursat me nikal**"
+                f"🥴 **Gtfo Blocked Restard**"
             )
             await bot(functions.contacts.BlockRequest(event.query.user_id))
             target = await event.client(GetFullUserRequest(event.query.user_id))
@@ -325,7 +325,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     link_preview=False,
                 )
             else:
-                reply_pop_up_alert = "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™"
+                reply_pop_up_alert = "тнιѕ ιѕ му мαѕтєя υѕєявσт уσυ ¢αηт υѕє ιт мαкє уσυя σωη ƒяσм @X_User_Bot . © χ-υѕєявσт"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         
 
@@ -333,9 +333,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             veriler = custom.Button.inline(f"{x_emoji} Re-Open Menu {x_emoji}", data="reopen")
-            await event.edit(f"**⚜️ Hêllẞø† Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {x_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})", buttons=veriler, link_preview=False)
+            await event.edit(f"**⚜️  мêñû χ-υѕєявσт ρrõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {x_mention}\n\n        [©️ X-Userbot™️]({chnl_link})", buttons=veriler, link_preview=False)
         else:
-            reply_pop_up_alert = "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™"
+            reply_pop_up_alert = "тнιѕ ιѕ му мαѕтєя υѕєявσт уσυ ¢αηт υѕє ιт мαкє уσυя σωη ƒяσм @X_User_Bot . © χ-υѕєявσт™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
    
 
@@ -355,7 +355,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™",
+                "тнιѕ ιѕ му мαѕтєя υѕєявσт уσυ ¢αηт υѕє ιт мαкє уσυя σωη ƒяσм @X_User_Bot . © χ-υѕєявσт™",
                 cache_time=0,
                 alert=True,
             )
@@ -389,7 +389,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™",
+                "тнιѕ ιѕ му мαѕтєя υѕєявσт уσυ ¢αηт υѕє ιт мαкє уσυя σωη ƒяσм @X_User_Bot . © χ-υѕєявσт ™",
                 cache_time=0,
                 alert=True,
             )
